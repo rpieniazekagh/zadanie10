@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zadanie 10</title>
+    <script type="module" crossorigin src="/assets/index-CQ5VWVj1.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-Cg9qaDag.css">
+  </head>
+  <body class="p-6">
+    <h1 class="text-2xl font-bold text-primary">To jest tytuł strony</h1>
+    <button id="btn" class="bg-blue-300 p-4 mt-4">count</button>
+  </body>
+  <main class="max-w-2xl mx-auto p-6">
+  <h1 class="text-2xl font-bold mb-4">Lista artykułów</h1>
+
+  <!-- SELECT do sortowania -->
+  <select id="sort" class="mb-4 p-2 border rounded">
+    <option value="created_at.desc">Po dacie (najnowsze)</option>
+    <option value="created_at.asc">Po dacie (najstarsze)</option>
+    <option value="title.asc">Po tytule (A-Z)</option>
+    <option value="title.desc">Po tytule (Z-A)</option>
+  </select>
+
+  <!-- Lista artykułów -->
+  <div id="articles" class="space-y-4"></div>
+
+  <hr class="my-6" />
+
+  <!-- Formularz -->
+  <h2 class="text-xl font-semibold mb-2">Dodaj nowy artykuł</h2>
+  <form id="article-form" class="space-y-2">
+    <input type="text" id="title" placeholder="Tytuł" class="w-full p-2 border rounded" required />
+    <input type="text" id="subtitle" placeholder="Podtytuł" class="w-full p-2 border rounded" required />
+    <input type="text" id="author" placeholder="Autor" class="w-full p-2 border rounded" required />
+    <textarea id="content" placeholder="Treść" class="w-full p-2 border rounded" required></textarea>
+    <input type="date" id="created_at" class="w-full p-2 border rounded" />
+    <button type="submit" class="bg-blue-500 text-white p-2 rounded">Dodaj artykuł</button>
+  </form>
+</main>
+
+</html>
