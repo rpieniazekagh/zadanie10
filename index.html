@@ -4,11 +4,35 @@
     <meta charset="UTF-8" />
     <link rel="icon" href="/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Zadanie 10</title>
+    <title>Zadanie 12</title>
   </head>
   <body class="p-6">
     <h1 class="text-2xl font-bold text-primary">To jest tytuł strony</h1>
     <button id="btn" class="bg-blue-300 p-4 mt-4">count</button>
+
+    <h2>Artykuły</h2>
+    <select id="sorting">
+        <option value="RosnacaData" selected>po dacie rosnąco</option>
+        <option value="MalejacaData">po dacie malejąco</option>
+        <option value="AlfabetycznieNazwisko">alfabetycznie po nazwisku</option>
+      </select>
+    <div id="articles-container">
+      
+    </div>
+    <h3>Dodaj nowy artykuł</h3>
+        <form id="articleForm">
+          <label for="title">Tytuł</label>
+            <input type="text" id="title" rows="3" cols="50" required placeholder="Tytuł artykułu" />
+            <label for="subtitle">Podtytuł</label>
+            <input type="text" id="subtitle" rows="3" cols="50" required placeholder="Podtytuł artykułu" />
+            <label for="author">Autor</label>
+            <input type="text" id="author" rows="3" cols="50" required placeholder="Jan Kowalski" />
+            <label for="created">Data Utworzenia :</label>
+                <input type="date" id="created" autocomplete="today">
+            <label for="content">Zawartość</label>
+            <input type="text" id="content" rows="3" cols="50" required placeholder="To jest tekst artykułu" />
+             <button type="submit">Stwórz</button>
+         </form>  
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
