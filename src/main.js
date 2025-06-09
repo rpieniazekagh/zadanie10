@@ -70,7 +70,7 @@ async function displayArticles(articles) {
 }
 
 loadArticles("created_at.asc");
-
+displayArticles();
 const form = document.getElementById("articleForm");
 const title = document.getElementById("title");
 const subtitle = document.getElementById("subtitle");
