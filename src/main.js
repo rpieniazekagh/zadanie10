@@ -49,7 +49,7 @@ Sorting.addEventListener('change', () => {
 
 
 
-function displayArticles(articles) {
+async function displayArticles(articles) {
   const container = document.getElementById('articles-container');
   container.innerHTML = "";
 
